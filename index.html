@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ChatConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+
+                <h1>ChatConnect</h1>
+
+                <button id="newChatBtn" class="icon-btn">
+                    +
+                </button>
+
+            </div>
+
+
+            <!-- Search -->
+
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search conversations..."
+                >
+
+            </div>
+
+
+            <!-- Conversations -->
+
+            <div id="conversationList" class="conversation-list">
+
+                <!-- JavaScript will add conversations here -->
+
+            </div>
+
+
+            <!-- User Profile -->
+
+            <div class="profile-section">
+
+                <div class="profile-avatar">
+                    Y
+                </div>
+
+                <div class="profile-info">
+
+                    <h3>You</h3>
+
+                    <p>Online</p>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =========================
+             CHAT AREA
+        ========================== -->
+
+        <main class="chat-area">
+
+
+            <!-- Chat Header -->
+
+            <header class="chat-header">
+
+                <div class="chat-user">
+
+                    <div id="chatAvatar" class="avatar">
+                        R
+                    </div>
+
+                    <div>
+
+                        <h2 id="chatUserName">
+                            Rahul
+                        </h2>
+
+                        <p id="chatStatus">
+                            Online
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="chat-actions">
+
+                    <button id="searchMessagesBtn">
+                        🔍
+                    </button>
+
+                    <button id="themeBtn">
+                        🌙
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- Messages -->
+
+            <section
+                id="messagesContainer"
+                class="messages-container"
+            >
+
+                <!-- Messages will appear here -->
+
+            </section>
+
+
+            <!-- Typing Indicator -->
+
+            <div
+                id="typingIndicator"
+                class="typing-indicator hidden"
+            >
+                Rahul is typing...
+            </div>
+
+
+            <!-- Message Input -->
+
+            <div class="message-area">
+
+                <button
+                    id="emojiBtn"
+                    class="message-action"
+                >
+                    😊
+                </button>
+
+
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Type a message..."
+                    autocomplete="off"
+                >
+
+
+                <button
+                    id="sendBtn"
+                    class="send-btn"
+                >
+                    ➤
+                </button>
+
+            </div>
+
+
+            <!-- Emoji Picker -->
+
+            <div
+                id="emojiPicker"
+                class="emoji-picker hidden"
+            >
+
+                <button>😀</button>
+                <button>😂</button>
+                <button>😍</button>
+                <button>😊</button>
+                <button>👍</button>
+                <button>❤️</button>
+                <button>🔥</button>
+                <button>🎉</button>
+                <button>😎</button>
+                <button>🙌</button>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
